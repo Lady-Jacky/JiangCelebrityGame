@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="78b19808-9fb0-4149-a0b7-cf9092c4c9c1" name="Changes" comment="">
+    <list default="true" id="78b19808-9fb0-4149-a0b7-cf9092c4c9c1" name="Changes" comment="Part 4 big brain">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/CelebrityGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CelebrityGame.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/CelebrityPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CelebrityPanel.java" afterDir="false" />
@@ -72,5 +75,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Part 4 big brain" />
+    <option name="LAST_COMMIT_MESSAGE" value="Part 4 big brain" />
   </component>
 </project>

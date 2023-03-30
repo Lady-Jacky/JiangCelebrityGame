@@ -1,8 +1,8 @@
 import javax.swing.*;
+import java.awt.*;
 import java.awt.event.ActionListener;
-import java.awt.Color;
-import java.awt.Font;
 import java.awt.event.ActionEvent;
+import java.awt.event.WindowEvent;
 
 /**
  * CelebrityPanel for the game Celebrity
@@ -179,6 +179,7 @@ public class CelebrityPanel extends JPanel implements ActionListener {
     private void setupListeners() {
         guessButton.addActionListener(this);
         countdownTimer.addActionListener(this);
+        resetButton.addActionListener(this);
     }
 
     /**
@@ -240,6 +241,11 @@ public class CelebrityPanel extends JPanel implements ActionListener {
             String button = clicked.getText();
             if (button.equals("Submit guess")) {
                 updateScreen();
+            } else if(button.equals("Start again")) {
+                controller.getGameWindow().dispose();
+                Rectangle coords = controller.getGameWindow().getBounds();
+                controller = new CelebrityGame();
+                controller.getGameWindow().setBounds(coords);
             }
         } else if (source instanceof Timer) {
             timerFires();
